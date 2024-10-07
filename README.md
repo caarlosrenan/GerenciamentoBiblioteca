@@ -100,13 +100,6 @@ A classe `CadastroEmprestimo` gerencia as operações de empréstimo de livros.
   - **Retorno**: 
     - Retorna uma mensagem de confirmação se o empréstimo for realizado com sucesso.
 
-- **`devolverLivro(int id)`**: 
-  - Realiza a devolução de um livro emprestado.
-  - **Parâmetros**: 
-    - `id`: Identificador único do empréstimo a ser devolvido.
-  - **Retorno**: 
-    - Retorna uma mensagem de confirmação se a devolução for realizada com sucesso.
-
 ### `CadastroAutor`
 A classe `CadastroAutor` gerencia as operações de cadastro de autores.
 
@@ -118,12 +111,12 @@ A classe `CadastroAutor` gerencia as operações de cadastro de autores.
   - **Retorno**: 
     - Retorna uma mensagem de confirmação se o cadastro for realizado com sucesso.
 
-- **`buscarAutor(int id)`**: 
-  - Busca um autor pelo ID.
+- **`buscarAutor(String nome)`**: 
+  - Busca um autor pelo nome.
   - **Parâmetros**: 
-    - `id`: Identificador único do autor.
+    - `nome`: Identificador único do autor.
   - **Retorno**: 
-    - Retorna o objeto `Autor` correspondente ao ID informado, ou `null` se não encontrado.
+    - Retorna o objeto `Autor` correspondente ao nome informado, ou `null` se não encontrado.
 
 ### `CadastroLivro`
 A classe `CadastroLivro` gerencia as operações de cadastro de livros.
