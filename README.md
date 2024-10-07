@@ -10,19 +10,47 @@ Este projeto é um sistema de gerenciamento de biblioteca que permite o cadastro
 
 ## Descrição das Classes
 
+### `Pessoa`
+A classe `Pessoa` é uma classe abstrata que serve como base para as entidades que representam indivíduos no sistema, como membros e autores.
+
+**Atributos:**
+- `id`: Identificador único da pessoa (gerado automaticamente).
+- `nome`: Nome da pessoa.
+- `dataNascimento`: Data de nascimento da pessoa.
+- `nacionalidade`: Nacionalidade da pessoa.
+
+#### Métodos Principais
+- `getNome()`: Retorna o nome da pessoa.
+- `setNome(String nome)`: Define o nome da pessoa.
+- `getDataNascimento()`: Retorna a data de nascimento da pessoa.
+- `setDataNascimento(LocalDate dataNascimento)`: Define a data de nascimento da pessoa.
+- `getNacionalidade()`: Retorna a nacionalidade da pessoa.
+- `setNacionalidade(String nacionalidade)`: Define a nacionalidade da pessoa.
+  
+### `Membro`
+- **Atributos:**
+  - `id`: Identificador único do membro.
+  - `nome`: Nome do membro.
+  - `endereco`: Endereço do membro.
+  - `telefone`: Telefone do membro.
+  - `email`: E-mail do membro.
+  - `dataAssociacao`: Data de associação do membro.
+
+- **Métodos:**
+  - `getId()`: Retorna o ID do membro.
+  - `getNome()`: Retorna o nome do membro.
+  - `setNome(String nome)`: Define o nome do membro.
+  - Outros métodos getters e setters.
+
 ### `Autor`
 - **Atributos:**
-  - `id`: Identificador único do autor.
-  - `nome`: Nome do autor.
-  - `nacionalidade`: Nacionalidade do autor.
-  - `dataNascimento`: Data de nascimento do autor.
   - `biografia`: Biografia do autor.
 
 - **Métodos:**
   - `getId()`: Retorna o ID do autor.
-  - `getNome()`: Retorna o nome do autor.
+  - `getBiografia()`: Retorna a biografia do autor.
   - `setNome(String nome)`: Define o nome do autor.
-  - Outros métodos getters e setters.
+  - `setBiografia(String biografia)`: Define a biografia do autor.
 
 ### `Livro`
 - **Atributos:**
@@ -37,21 +65,6 @@ Este projeto é um sistema de gerenciamento de biblioteca que permite o cadastro
   - `getIsbn()`: Retorna o ISBN do livro.
   - `getTitulo()`: Retorna o título do livro.
   - `setTitulo(String titulo)`: Define o título do livro.
-  - Outros métodos getters e setters.
-
-### `Membro`
-- **Atributos:**
-  - `id`: Identificador único do membro.
-  - `nome`: Nome do membro.
-  - `endereco`: Endereço do membro.
-  - `telefone`: Telefone do membro.
-  - `email`: E-mail do membro.
-  - `dataAssociacao`: Data de associação do membro.
-
-- **Métodos:**
-  - `getId()`: Retorna o ID do membro.
-  - `getNome()`: Retorna o nome do membro.
-  - `setNome(String nome)`: Define o nome do membro.
   - Outros métodos getters e setters.
 
 ### `Emprestimo`
